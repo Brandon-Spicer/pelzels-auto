@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://pelzelsauto.com/$1 [R=301]
